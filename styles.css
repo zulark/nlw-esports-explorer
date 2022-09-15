@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-image: url(assets/Fundo.jpg);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #121214;
+    line-height: 160%;
+}
+
+ul {
+    list-style: none;
+}
+header{ 
+    height: calc(120px + 32px);
+    padding: 32px;
+}
+header div{
+    display: flex;
+    margin: auto;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    width: 120px;
+    padding: 4px;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+header div:hover{ 
+    transform: scale(1.1);
+}
+
+header div img { 
+    width: 100%;
+    border-radius: 50%;
+}
+
+main {
+    max-width: 580px;
+    width: 90%;
+    margin: 32px auto;
+    display: grid;
+    gap: 24px;
+}
+
+
+section {
+    color: #fff;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    padding-top: 4px;
+    border-radius: 13.5px;
+}
+
+section div {
+    background-color: #2A2634;
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;
+}
+
+
+section h2 {
+    font-weight: 900;
+    font-size: 24px;
+    letter-spacing: -0.47px;
+    margin-bottom: 16px;
+}
+
+section p {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -0.18px;
+    color: #A1A1AA;
+}
+
+section ul {
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+
+}
+section ul li{ 
+    transition: .3s;
+}
+
+section ul li:hover {
+    transform: scale(1.1);
+}
+ul#games-list img {
+    border-radius: 8px;
+    width: 90px;
+}
+
+ul#channel-list img {
+    border-radius: 50%;
+    width: 70px;
+    border: 1px solid #443E54;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+header div{ 
+    animation: fromTopAvatar 1s .4s backwards;
+}
+
+main section{ 
+    animation: fromBottomSection 1s backwards;
+}
+
+
+main section:nth-child(2){
+    animation-delay: .2s;
+}
+
+main section:nth-child(3){
+    animation-delay: .4s;
+}
+main section:nth-child(4){
+    animation-delay: .75s;
+}
+
+
+@keyframes fromTopAvatar { 
+
+    from { 
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fromBottomSection {
+
+    from { 
+        opacity: 0;
+        transform: translateX(220px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
