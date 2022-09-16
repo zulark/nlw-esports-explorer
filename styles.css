@@ -8,10 +8,10 @@
 }
 
 body {
-    background-image: url(assets/Fundo.jpg);
-    background-position: top center;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
+    background-image: url(assets/fundo.jpeg);
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;   
     background-color: #121214;
     line-height: 160%;
 }
@@ -23,10 +23,12 @@ header{
     height: calc(120px + 32px);
     padding: 32px;
 }
+
+
 header div{
     display: flex;
     margin: auto;
-    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    background-image: linear-gradient(90deg,  #5f49be 0%, #9f7df1 50.52%, #211946 100%);
     width: 120px;
     padding: 4px;
     border-radius: 50%;
@@ -53,13 +55,13 @@ main {
 
 section {
     color: #fff;
-    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    background-image: linear-gradient(90deg,  #5f49be 0%, #9f7df1 50.52%, #211946 100%);
     padding-top: 4px;
     border-radius: 13.5px;
 }
 
 section div {
-    background-color: #2A2634;
+    background-color: #243556;
     padding: 32px;
     padding-top: 24px;
     border-radius: 8px;
@@ -157,5 +159,12 @@ main section:nth-child(4){
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@media (max-width: 680px) {
+    section ul {
+        gap: 8px;
+    
     }
 }
