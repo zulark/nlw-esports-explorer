@@ -93,7 +93,9 @@ section ul li{
 
 section ul li:hover {
     transform: scale(1.1);
+    transform: translateY(-5px);
 }
+
 ul#games-list img {
     border-radius: 8px;
     width: 90px;
