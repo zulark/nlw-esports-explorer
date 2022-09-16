@@ -2,7 +2,7 @@
 
 Projeto construído durante o evento Next Level Week da Rocketseat.
 
-![preview](./.github/Preview.png)
+![preview](./.github/previewbg.png)
 [Clique aqui para acessar](https://zulark.github.io/nlwexplorer/)
 
 
